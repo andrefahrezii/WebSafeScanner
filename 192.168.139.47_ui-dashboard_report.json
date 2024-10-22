@@ -1,0 +1,4 @@
+{
+    "target": "http://192.168.139.47/ui-dashboard",
+    "vulnerabilities": "Error occurred: Command '['nmap', '-sV', '--script=vuln', 'http://192.168.139.47/ui-dashboard']' died with <Signals.SIGKILL: 9>."
+}
