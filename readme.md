@@ -102,3 +102,47 @@ Jika Anda mengalami masalah saat menjalankan aplikasi, periksa pesan kesalahan y
 ```bash
 Anda dapat mengganti `https://github.com/username/repository.git` dengan URL repositori Anda dan `nama_file.py` dengan nama file utama aplikasi Anda. Selamat mencoba!
 ```
+
+## Example Response
+
+```JSON
+{
+  "target": "http://192.168.1.230/payment/va",
+  "scan_report": {
+    "host": {
+      "ip": "192.168.1.230",
+      "status": "up",
+      "latency": "0.0010s"
+    },
+    "ports": [
+      {
+        "port": 80,
+        "state": "open",
+        "service": "http",
+        "version": "Apache httpd 2.4.41",
+        "http_title": "Sample Title",
+        "http_server_header": "Apache/2.4.41 (Ubuntu)"
+      },
+      {
+        "port": 443,
+        "state": "open",
+        "service": "ssl/http",
+        "version": "Nginx 1.18.0",
+        "http_title": "Sample Title",
+        "ssl_cert": {
+          "subject": "commonName=example.com"
+        },
+        "ssl_date": "TLS randomness does not represent time",
+        "vulnerabilities": [
+          {
+            "cve": "cve-2019-11043",
+            "description": "Detail tentang kerentanan"
+          }
+        ],
+        "http_server_header": "nginx/1.18.0"
+      }
+    ],
+    "closed_ports": 995
+  }
+}
+```
