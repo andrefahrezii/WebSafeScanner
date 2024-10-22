@@ -1,0 +1,22 @@
+# Ignore virtual environment folder
+venv/
+
+# Ignore compiled Python files
+*.pyc
+__pycache__/
+
+# Ignore environment variable files
+.env
+
+# Ignore Nmap scan result files
+*.xml
+*_report.json
+
+# Ignore logs
+*.log
+
+# Ignore OS generated files
+.DS_Store
+
+# Ignore static and temporary files
+static/
